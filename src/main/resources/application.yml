@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: post.command
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+server:
+  port: 8003
+kafka:
+  topic:
+    name: post-events
