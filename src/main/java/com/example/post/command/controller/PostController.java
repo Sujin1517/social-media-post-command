@@ -38,15 +38,17 @@ public class PostController {
         kafkaList.remove(userKafkaStatus);
     }
 
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public void createChain(@RequestBody PostChain req) {
-    }
-
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public void createLike(@RequestBody Like req) {
-    }
+//    @PostMapping
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public void createChain(@RequestBody PostChain req) {
+//
+//    }
+//
+//    @PostMapping
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public void createLike(@RequestBody Like req) {
+//
+//    }
 
     @Scheduled(cron ="*/10 * * * * *")
     public void reSend() {
